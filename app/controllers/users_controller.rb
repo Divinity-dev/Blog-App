@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
   def index
-    @users = User.all
-    @posts = Post.limit(3)
+    @user = User.all
   end
 
   def show
