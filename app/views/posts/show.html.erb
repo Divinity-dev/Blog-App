@@ -16,4 +16,17 @@
        <% end %>
   </div>
     <%end%>
+
+    <div >
+
+    <div >
+      <h3>Leave a comment</h3>
+     <%= render 'comments/form', comment: @comment %>
+     </div>
+
+      <div >
+       <h3>Like this post</h3>
+       <%= render 'likes/form', like: @like %>
+       </div>
+     </div>
 </div>
