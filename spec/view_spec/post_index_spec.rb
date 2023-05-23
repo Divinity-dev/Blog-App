@@ -1,4 +1,5 @@
 require 'rails_helper'
+
 RSpec.describe 'Render posts index page', type: :feature do
   before :each do
     @user = User.create(name: 'Rita', photo: 'https://unsplash.com/photos/rDEOVtE7vOs',

@@ -1,4 +1,5 @@
 require 'rails_helper'
+
 RSpec.describe 'Renders the post show page', type: :feature do
   before :each do
     @user = User.create(name: 'Enrique', photo: 'https://unsplash.com/photos/ILip77SbmOE',
