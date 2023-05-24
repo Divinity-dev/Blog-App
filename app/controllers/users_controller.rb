@@ -10,6 +10,7 @@ class UsersController < ApplicationController
       find_user
     end
   end
+
   private
 
   def sign_out_and_redirect
