@@ -1,4 +1,8 @@
 <h1>List Users<h1/>
+<button>
+<%= link_to 'Sign out',  destroy_user_session_path, method: :delete %>
+</button>
+</div>
 <% @user.each do |user| %>
     <%= render 'shared/user', user:user%>
 <%end%>

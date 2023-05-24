@@ -10,6 +10,12 @@ class User < ApplicationRecord
   validates :name, presence: true
   validates :postscounter, numericality: { only_integer: true }, comparison: { greater_than_or_equal_to: 0 }
 
+  before_validation :assign_posts_counter
+
+  def assign_posts_counter
+    self.postscounter = posts.count
+  end
+
   def most_three_recent_post
     posts.order(created_at: :desc).limit(3)
   end
