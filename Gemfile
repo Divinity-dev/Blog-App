@@ -7,6 +7,7 @@ ruby '3.2.2'
 gem 'rails', '~> 7.0.4', '>= 7.0.4.3'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
+gem 'devise'
 gem 'sprockets-rails'
 
 # Use postgresql as the database for Active Record
